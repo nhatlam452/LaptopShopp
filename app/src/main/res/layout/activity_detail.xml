@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailActivity">
+
+    <ScrollView
+        android:layout_above="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/imgDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvNameDetail"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="DELL XPS 13 9310-70234076"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="-11dp"
+                    android:layout_toRightOf="@+id/tvNameDetail"
+                    android:backgroundTint="#F6EFE4"
+                    android:paddingLeft="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_favorite_black_24dp"
+
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvPriceDetail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:fontFamily="@font/metrophobic_regular"
+                android:text="30.000.000"
+                android:textAlignment="center"
+                android:textColor="#FFA113"
+                android:textSize="24dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="303dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/tv2"
+                android:fontFamily="@font/metrophobic_regular"
+                android:text="Dell XPS 13 9310 (9310-70234076) sở hữu dòng Intel Core i5-1135G7 thế hệ thứ 11, màn hình 13.4 inches WVA, RAM 8GB LPDDR4X 3200MHz cùng card đồ họa tích hợp Intel Iris Xe Graphics, mang đến những tính năng tuyệt vời cho người sử dụng"
+                android:textSize="14dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3"
+                android:fontFamily="@font/metrophobic_regular"
+                android:text="Thong tin chung"
+                android:textSize="14dp"
+                android:textStyle="bold"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="CPU"
+                    android:textColor="#FFA113"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvCpuDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Intel Core i5-1135G7"
+                    android:textColor="#50555C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Card Đồ Họa"
+                    android:textColor="#FFA113"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvVgaDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Intel Core i5-1135G7"
+                    android:textColor="#50555C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="RAM"
+                    android:textColor="#FFA113"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvRAMDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Intel Core i5-1135G7"
+                    android:textColor="#50555C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Màn Hình"
+                    android:textColor="#FFA113"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvScreenDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Intel Core i5-1135G7"
+                    android:textColor="#50555C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Ổ cứng"
+                    android:textColor="#FFA113"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvDiskDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Intel Core i5-1135G7"
+                    android:textColor="#50555C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Hệ điểu hành"
+                    android:textColor="#FFA113"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvSystemDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Intel Core i5-1135G7"
+                    android:textColor="#50555C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Khối lượng"
+                    android:textColor="#FFA113"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvWeightDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Intel Core i5-1135G7"
+                    android:textColor="#50555C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Pin"
+                    android:textColor="#FFA113"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvBatteryDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:text="Intel Core i5-1135G7"
+                    android:textColor="#50555C"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#FFA113"
+        android:fontFamily="@font/metrophobic_regular"
+        android:text="Them vao gio hang" />
+
+
+</RelativeLayout>

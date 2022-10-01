@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".Activities.LoginActivity">
+    <ImageView
+        android:id="@+id/imgIconApp"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_laptop_logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgIconApp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Chào mừng bạn đến với G6"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_shape_login_register">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/iptPhone"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Vui lòng nhập số điện thoại / email"
+            android:layout_marginTop="100dp">
+
+            <EditText
+                android:id="@+id/edtPhoneNumberLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutIptPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iptPhone"
+            android:layout_centerHorizontal="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/iptPassword"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:textColorHighlight="@color/color_selected_bottom_sheet_dialog"
+                    android:id="@+id/edtPasswordLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#FFFFFF"
+                    android:hint="Vui lòng nhập mật khẩu"
+                    android:inputType="textPassword"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textColorHint="#1B8F9E"
+                android:layout_toEndOf="@+id/iptPassword"
+                android:hint="| Quên ? "
+                android:orientation="horizontal">
+
+                <EditText
+                    android:textAlignment="gravity"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#FFFFFF"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textStyle="normal" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginEnd="20dp"
+            android:id="@+id/onPressToRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/layoutIptPassword"
+            android:layout_alignParentRight="true"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn là người mới ?"
+                android:textColor="#222222"
+                android:textFontWeight="500"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/iconnext" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/onPressToRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFA113"
+            android:text="ĐĂNG NHẬP" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lnOrderLoginOption"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="125dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="Hoặc" />
+
+            <View
+                android:layout_width="125dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnOrderLoginOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+
+
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:layout_width="92dp"
+                    android:layout_height="64dp"
+                    android:id="@+id/ifbSMSLogin"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_baseline_local_phone_24"
+
+                    android:tint="#1BB621" />
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:id="@+id/ifbGoogleLogin"
+                    android:layout_width="92dp"
+                    android:layout_height="64dp"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/buttongoogle" />
+
+                <androidx.constraintlayout.utils.widget.ImageFilterButton
+                    android:id="@+id/ifbFbLogin"
+                    android:layout_width="92dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:src="@drawable/buttonfacebook" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

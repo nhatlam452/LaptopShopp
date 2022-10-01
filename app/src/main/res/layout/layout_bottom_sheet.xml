@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:background="@drawable/custom_bottomsheet_layout"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imgRemove"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remove"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center|top"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sap xep"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="20dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvmuaNhieuNhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Mua nhieu nhat"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="13dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvMoiNhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Moi nhat"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="13dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvThapNhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Gia thap nhat"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="13dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvCaoNhat"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Gia cao nhat"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="13dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

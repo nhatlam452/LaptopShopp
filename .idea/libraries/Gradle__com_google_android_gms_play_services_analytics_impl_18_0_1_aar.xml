@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-analytics-impl:18.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a1d1847cbffc8d17372d501afab11641/transformed/play-services-analytics-impl-18.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ab45d4bd38d797f71542be3f1647aa93/transformed/play-services-analytics-impl-18.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0f948ff31f387c87892e093e3bac4d04/transformed/play-services-analytics-impl-18.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0f948ff31f387c87892e093e3bac4d04/transformed/play-services-analytics-impl-18.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0f948ff31f387c87892e093e3bac4d04/transformed/play-services-analytics-impl-18.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-analytics-impl/18.0.1/b2998ce19a34321ef23aa503c3f06ab9b077e3a7/play-services-analytics-impl-18.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

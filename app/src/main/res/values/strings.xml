@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LaptopShop</string>
+    <string name="action_home">Home</string>
+    <string name="action_shop">Shop</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_fav">Favorite</string>
+    <string name="action_myPage">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">454043296761444</string>
+    <string name="facebook_client_token">e4912de104abffac6bd4e4dd1522bb36</string>
+    <string name="fb_login_protocol_scheme">fb454043296761444</string>
+
+
+</resources>

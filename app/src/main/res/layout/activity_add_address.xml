@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#0F0C0C0C"
+    tools:context=".Activities.AddAddressActivity">
+    <Toolbar
+        android:title="Thêm địa chỉ"
+        android:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:background="@color/color_selected_bottom_sheet_dialog"
+        android:layout_height="?attr/actionBarSize"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edtAddAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_layout_item"
+            android:hint="Địa chỉ"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:layout_margin="20dp"
+            android:id="@+id/spnAddProvince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:minHeight="40dp" />
+
+        <Spinner
+            android:layout_margin="20dp"
+            android:id="@+id/spnAddDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:minHeight="40dp" />
+
+        <Spinner
+            android:layout_margin="20dp"
+            android:id="@+id/spnAddCommune"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:minHeight="40dp" />
+        <Button
+            android:id="@+id/btnAddAddress"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu địa chỉ"
+            />
+    </LinearLayout>
+
+</LinearLayout>

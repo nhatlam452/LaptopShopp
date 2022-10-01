@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#0F0C0C0C"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddressActivity">
+    <TextView
+        android:id="@+id/toolbarAddess"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Địa chỉ nhận hàng"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/color_selected_bottom_sheet_dialog"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/toolbarAddess"
+        android:id="@+id/rcvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_add_white_24dp"
+        app:tint="@color/white"
+
+        />
+</RelativeLayout>

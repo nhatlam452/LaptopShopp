@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+
+    tools:context=".Activities.SMSLoginActivity">
+
+    <ImageView
+        android:id="@+id/imgIconApp"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_laptop_logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgIconApp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Chào mừng bạn đến với G6"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_shape_login_register">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/iptPhone"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Vui lòng nhập số điện thoại"
+            android:layout_marginTop="100dp">
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/edtSMSLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/iptPhone"
+            android:id="@+id/btnSMSLogin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#FFA113"
+            android:text="ĐĂNG NHẬP" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

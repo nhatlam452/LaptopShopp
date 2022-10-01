@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FilterActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLocsp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFA113"
+        app:titleTextColor="@color/white"
+
+        >
+
+        <TextView
+            android:id="@+id/thongtinsanpham"
+            android:layout_width="200dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/metrophobic_regular"
+            android:text="Lọc sản phẩm "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@+id/thongtinsanpham"
+
+            android:background="@drawable/iconnavigation" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLocsp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTheoGia"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/custom_layout_item"
+                android:fontFamily="@font/metrophobic_regular"
+                android:paddingLeft="5dp"
+                android:text="Theo giá "
+                android:textColor="#222222"
+                android:textSize="20dp"
+
+                android:textStyle="bold"
+
+                />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/rangeSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTheoGia">
+
+            </com.google.android.material.slider.RangeSlider>
+
+            <TextView
+                android:id="@+id/tvThuonghieu"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rangeSlider"
+                android:background="@drawable/custom_layout_item"
+                android:fontFamily="@font/metrophobic_regular"
+                android:paddingLeft="5dp"
+                android:text="Theo Brand "
+                android:textColor="#222222"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/HScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/tvThuonghieu"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/custom_layout_item"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/custom_circle_item"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:text="Dell"
+                            android:textAlignment="center"
+                            android:textColor="#FFA113"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/custom_circle_item"
+                        android:backgroundTint="#FFA113">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_acer"
+                            android:textColor="#FFA113"
+                            android:textStyle="bold"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/custom_circle_item"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:text="Dell"
+                            android:textAlignment="center"
+                            android:textColor="#FFA113"
+                            android:textStyle="bold"
+
+                            />
+
+                        />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/custom_circle_item"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:text="Dell"
+                            android:textAlignment="center"
+                            android:textColor="#FFA113"
+                            android:textStyle="bold"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tvCPU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HScrollView"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="5dp"
+                android:text="CPU"
+                android:textColor="#222222"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CPUlist"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/tvCPU"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/custom_layout_item"
+                android:paddingRight="10dp">
+
+
+                <TextView
+                    android:id="@+id/button_1"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="Core i3"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/button_2"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:backgroundTint="#FFA113"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="Core i5"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/button_3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="Core i7"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/button_4"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="Core i9"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/button_5"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="Ryzen 3"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/button_6"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="Ryzen 5"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/button_7"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="Ryzen 7"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    app:constraint_referenced_ids="button_1,button_2,button_3,button_4,button_5,button_6,button_7"
+                    app:flow_verticalGap="15dp"
+                    app:flow_wrapMode="chain2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.466"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.542" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvKichco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CPUlist"
+                android:fontFamily="@font/metrophobic_regular"
+                android:paddingLeft="5dp"
+                android:text="Kích cỡ màn hình"
+                android:textColor="#222222"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Kickco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvKichco"
+                android:background="@drawable/custom_layout_item"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvinch1"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="12.3”"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinch2"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="13”"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinch3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="13.3”"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinch4"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="13.4”"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinch5"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="13.5”"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinch6"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="14”"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinch7"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:backgroundTint="#FFA113"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="15”"
+                    android:textColor="#F1EDED"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinch8"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="16”"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinch9"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_locsp_item"
+                    android:fontFamily="@font/metrophobic_regular"
+                    android:gravity="center"
+                    android:text="17”"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    app:constraint_referenced_ids="tvinch1,tvinch2,tvinch3,tvinch4,tvinch5,tvinch6,tvinch7,tvinch8,tvinch9"
+                    app:flow_verticalGap="9dp"
+                    app:flow_wrapMode="aligned"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.466"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.542" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Kickco"
+                android:layout_centerInParent="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Huy"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="32dp"
+                    app:cardCornerRadius="25dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#FFA113"
+                        android:fontFamily="@font/metrophobic_regular"
+                        android:text="Lọc"
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/Huy"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    app:cardCornerRadius="25dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#EFEEEC"
+                        android:fontFamily="@font/metrophobic_regular"
+                        android:text="Hủy"
+                        android:textColor="#635858"
+
+
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

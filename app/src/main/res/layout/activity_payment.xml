@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F0C0C0C"
+    tools:context=".Activities.PaymentActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="LAPTOPSHOP.COM"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/shoppingcart"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/shoppingcart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_toRightOf="@id/shoppingcart"
+                        android:gravity="center_vertical"
+                        android:text="Thong tin don hang"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:text="40,980,000 d"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="#CAC3C3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/custom_layout_item"
+                        android:hint="Ma giam gia"
+                        android:paddingStart="20dp"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#AAA3A3"
+                        android:text="Su dung"
+                        android:textAllCaps="false"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="#CAC3C3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="Tam tinh"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tvTamTinh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="40.980.000 d"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="Phi van chuyen"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="#CAC3C3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="Tong cong : "
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalPriceOrder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="40.980.000 d"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="#CAC3C3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Thông tin đơn hàng"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+                <RelativeLayout
+                    android:paddingHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Sư dụng địa chỉ của ban"
+                        android:textColor="#736D6D"
+                        android:textStyle="italic"
+                        android:textSize="12dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/cbAddress"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:buttonTint="@color/color_selected_bottom_sheet_dialog"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/custom_layout_item"
+                    android:hint="Họ và tên"
+                    android:paddingStart="20dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/custom_layout_item"
+                    android:hint="Email"
+                    android:paddingStart="20dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/custom_layout_item"
+                    android:hint="Số điện thoại"
+                    android:paddingStart="20dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edtLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/custom_layout_item"
+                    android:hint="Địa chỉ"
+                    android:paddingStart="20dp"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:id="@+id/lllAddressDefault"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvProvince"
+                        android:text="Thanh Pho"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/custom_layout_item"
+                        android:paddingStart="20dp"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvDistrict"
+                        android:text="Thanh Pho"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/custom_layout_item"
+                        android:paddingStart="20dp"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvCommune"
+                        android:text="Thanh Pho"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/custom_layout_item"
+                        android:paddingStart="20dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lllAddress"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/spnProvince"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:minHeight="40dp" />
+
+                    <Spinner
+
+                        android:id="@+id/spnDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:background="@android:color/transparent"
+                        android:minHeight="40dp" />
+
+                    <Spinner
+                        android:id="@+id/spnCommune"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:background="@android:color/transparent"
+                        android:minHeight="40dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="Phương thức thanh toán"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <Spinner
+                android:id="@+id/spnPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_layout_item"
+                android:minHeight="40dp"/>
+<!--                android:background="@android:color/transparent"-->
+
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Thanh toán"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:text="Giỏ hàng"
+                android:textColor="@color/color_selected_bottom_sheet_dialog"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
